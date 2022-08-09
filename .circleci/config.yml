@@ -48,9 +48,6 @@ jobs:
       - run:
           name: "Publish to registry"
           command: "npm publish"
-      - run:
-          name: "Push version bump"
-          command: "git push origin main"
 
 workflows:
   build:
