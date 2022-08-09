@@ -1,6 +1,6 @@
 {
   "name": "npm-base",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Npm package template for building & publishing w/ TypeScript, eslint, jest, CircleCi npm registry deployment",
   "files": [
     "dist"
