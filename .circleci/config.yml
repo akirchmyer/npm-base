@@ -58,3 +58,9 @@ workflows:
             only: /.*/
           tags:
             only: /.*/
+    - deploy_to_registry:
+        filters:
+          branches:
+            ignore: /.*/
+          tags:
+            only: /.*/
