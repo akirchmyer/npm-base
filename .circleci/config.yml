@@ -64,5 +64,5 @@ workflows:
             ignore: /.*/
           tags:
             only: /.*/
-          requires:
-            - run_tests
+        requires:
+          - run_tests
