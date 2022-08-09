@@ -52,17 +52,9 @@ jobs:
 workflows:
   build:
     jobs:
-      - run_tests:
+    - run_tests
         filters:
           branches:
             only: /.*/
           tags:
             only: /.*/
-      - deploy_to_registry:
-        filters:
-          branches:
-            ignore: /.*/
-          tags:
-            only: /.*/
-        requires:
-          - run_tests
