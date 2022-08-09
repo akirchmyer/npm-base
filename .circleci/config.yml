@@ -56,7 +56,8 @@ workflows:
       - deploy_to_registry:
           filters:
             branches:
-              only:
-                - main
+              ignore: /.*/
+            tags:
+              only: /.*/
           requires:
             - run_tests
