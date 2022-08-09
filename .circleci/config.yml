@@ -44,7 +44,7 @@ jobs:
           command: "git config --global user.name 'CircleCi'"
       - run:
           name: "Version bump"
-          command: "npm version patch"
+          command: "npm version $CIRCLE_TAG"
       - run:
           name: "Publish to registry"
           command: "npm publish"
