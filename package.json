@@ -7,8 +7,9 @@
   ],
   "scripts": {
     "build": "tsc",
+    "format": "prettier --write \"./src/**/*.+(js|ts|json)\"",
     "lint": "eslint ./src --ext .ts",
-    "lint:fix": "eslint ./src --ext .ts --fix",
+    "lint:fix": "eslint ./src --ext .ts --fix && npm run format",
     "test": "npm run lint && npm run unit",
     "unit": "jest"
   },
@@ -31,11 +32,12 @@
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
     "jest": "^28.1.3",
+    "prettier": "^2.7.1",
     "ts-jest": "^28.0.7",
     "typescript": "^4.7.4"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/akirchmyer/npm-base.git"
