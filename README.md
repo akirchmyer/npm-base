@@ -6,6 +6,7 @@ Includes the following:
 - TypeScript
 - Jest
 - Eslint
+- Prettier
 - Publish to registry via CircleCi (using secure CircleCi ENV values)
 
 ## To start a new project based on this repo
